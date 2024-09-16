@@ -1,20 +1,19 @@
-# Kruskal-s-Algorithm
-This is a Kruskal’s Algorithm with C.
+# Kruskal's Algorithm
 
+## Description
+This repository contains an implementation of **Kruskal's Algorithm** in **C**. Kruskal's algorithm is used to find the **minimum spanning tree (MST)** of a connected, weighted graph by selecting edges in order of increasing weight and using a **Union-Find** structure to avoid cycles.
 
-The Kruskal's algorithm performs a Union-Find operation by comparing the set of two vertices that connect the edges by sequentially drawing from the smallest edges.
+### Key Features:
+- Finds the minimum spanning tree of a graph
+- Uses Union-Find operations for cycle detection
+- Efficiently handles large graphs with multiple edges
 
-Kruskal’s Algorithm Pseudocode:
+For detailed information about the algorithm, refer to the Kruskal's Algorithm pseudocode in the documentation.
 
-Kruskal(G, w)
-{
-	A = empty set;
-	for each v ⊆ G.V
-		Make_set(v)
-	sort G.E by increasing edge weight w
-	for each edge (u, v) ⊆ G.E (in sorted order)
-		if Find_set(u) != Find_set(v)
-		A = A U {{u,v}};
-		Union(u, v);
-	return A
-}
+## How to Run:
+1. Clone the repository to your local machine.
+2. Compile the C program.
+3. Run the executable, providing the input file containing the graph's edge list and vertices.
+
+## Credits:
+- Created by **Gyuhwan Choi**.
